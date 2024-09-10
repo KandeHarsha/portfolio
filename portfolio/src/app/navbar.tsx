@@ -7,8 +7,8 @@ export default function Navbar(){
     <div className="my-4 flex justify-around gap-x-4">
       <div className="text-white text-6xl">{name.toUpperCase()}</div>
       <div className="flex gap-x-16 items-center ">
-        {menuItems.map((item:string) => {return(
-          <div className="">{item}</div>
+        {menuItems.map((item:string, index:number) => {return(
+          <div key={index} className="">{item}</div>
         )})}
       </div>
     </div>
